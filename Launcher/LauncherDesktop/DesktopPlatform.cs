@@ -15,7 +15,7 @@ namespace Triode.Desktop
         public override IView CreateView()
             => view = Window.Create(new()
             {
-                Title = "LoA game",
+                Title = "The world is empty",
                 WindowBorder = WindowBorder.Resizable,
                 WindowState = WindowState.Normal,
                 Size = new Vector2D<int>(500, 500),

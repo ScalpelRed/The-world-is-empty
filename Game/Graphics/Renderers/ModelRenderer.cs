@@ -13,7 +13,7 @@ namespace Game.Graphics.Renderers
     {
         public Model Model;
 
-        public ModelRenderer(WorldObject linkedObject, Assets.Shader shader) : this(linkedObject, new Model(linkedObject.Game.Core.OpenGL, shader))
+        public ModelRenderer(WorldObject linkedObject, Shader shader) : this(linkedObject, new Model(linkedObject.Game.Core.OpenGL, shader))
         {
 
         }

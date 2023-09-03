@@ -1,4 +1,4 @@
-﻿using Game.Assets;
+﻿using Game.OtherAssets;
 using Genbox.VelcroPhysics.Shared;
 using System.Numerics;
 using System.Collections.Generic;

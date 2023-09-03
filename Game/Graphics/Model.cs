@@ -1,5 +1,4 @@
-﻿using Game.Assets;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Numerics;
 using Silk.NET.OpenGL;
 
@@ -14,18 +13,18 @@ namespace Game.Graphics
         public readonly OpenGL Gl;
 
         public GlMesh Mesh;
-        public Assets.Texture Texture;
-        public Assets.Shader Shader;
+        public Texture Texture;
+        public Shader Shader;
         public PrimitiveType RenderMode;
 
 
-        public static bool IsCurrentShader(Assets.Shader shader)
+        public static bool IsCurrentShader(Shader shader)
         {
             return currentShader == shader.Handle;
         }
 
 
-        public Model(OpenGL gl, GlMesh mesh, Assets.Texture texture, Assets.Shader shader)
+        public Model(OpenGL gl, GlMesh mesh, Texture texture, Shader shader)
         {
             Gl = gl;
 
@@ -35,17 +34,17 @@ namespace Game.Graphics
             ResetRenderMode();
         }
 
-        public Model(OpenGL gl, GlMesh mesh, Assets.Shader shader) : this(gl, mesh, gl.Core.Assets.GetTexture(""), shader)
+        public Model(OpenGL gl, GlMesh mesh, Shader shader) : this(gl, mesh, gl.Core.Assets.GetTexture(""), shader)
         {
             
         }
 
-        public Model(OpenGL gl, Assets.Shader shader) : this(gl, gl.Core.Assets.GetGlMesh("sprite"), shader)
+        public Model(OpenGL gl, Shader shader) : this(gl, gl.Core.Assets.GetGlMesh("sprite"), shader)
         {
 
         }
 
-        public Model(OpenGL gl, Assets.Texture texture, Assets.Shader shader) : this(gl, gl.Core.Assets.GetGlMesh("sprite"), texture, shader)
+        public Model(OpenGL gl, Texture texture, Shader shader) : this(gl, gl.Core.Assets.GetGlMesh("sprite"), texture, shader)
         {
 
         }

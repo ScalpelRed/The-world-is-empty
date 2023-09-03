@@ -1,4 +1,4 @@
-﻿using Game.Assets;
+﻿using Game.OtherAssets;
 using Silk.NET.OpenGL;
 
 namespace Game.Graphics

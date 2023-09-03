@@ -19,9 +19,7 @@ namespace Game.Main
             Core = core;
             MainCamera = new Camera(new WorldObject(Vector3.Zero, this), core.OpenGL, 10);
             PhysicalWorld = new PhysicalWorld(new WorldObject(Vector3.Zero, this), Vector2.Zero);
-
-            Core.Assets.GetSound(@"D:\Федор_файлы\Desktop\Шаблоны\Triode\Assets\sounds\glassbreak.wav").Play();
-            Core.Assets.GetSound(@"D:\Федор_файлы\Desktop\Шаблоны\Triode\Assets\sounds\expl.mp3").Play();
+           
         }
 
         public void Step()

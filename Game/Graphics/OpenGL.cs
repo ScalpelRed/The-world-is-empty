@@ -2,7 +2,7 @@ using Silk.NET.OpenGL;
 using Silk.NET.Windowing;
 using System.Numerics;
 using Game.Main;
-using Game.Assets;
+using Game.OtherAssets;
 
 namespace Game.Graphics
 {

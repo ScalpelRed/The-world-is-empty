@@ -11,14 +11,14 @@ namespace Game.Main
         public readonly Input Input;
         public readonly GameController Game;
         public readonly Assets Assets;
-        public readonly Audio.AudioCore Audio;
+        //public readonly Audio.AudioCore Audio;
 
         public GameCore(Triode.Platform platform, IView view)
         {
             Platform = platform;
             OpenGL = new OpenGL(view, this);
             Assets = new Assets(this);
-            Audio = new Audio.AudioCore();
+            //Audio = new Audio.AudioCore(this);
             Input = new Input(OpenGL);
             Game = new GameController(this);
         }

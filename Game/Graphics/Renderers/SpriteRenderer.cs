@@ -1,5 +1,4 @@
-﻿using Game.Assets;
-using Game.Main;
+﻿using Game.Main;
 using System.Numerics;
 
 namespace Game.Graphics.Renderers

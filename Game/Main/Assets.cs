@@ -1,5 +1,6 @@
-﻿using Game.Assets;
+﻿//using Game.Audio;
 using Game.Graphics;
+using Game.OtherAssets;
 using Game.Phys;
 using System;
 using System.Collections.Generic;
@@ -123,18 +124,18 @@ namespace Game.Main
 
         }
 
-        private readonly SortedDictionary<string, Sound> Sounds = new();
-        public Sound GetSound(string name)
+        /*private readonly SortedDictionary<string, MemorySound> MemorySounds = new();
+        public MemorySound GetMemorySound(string name)
         {
             try
             {
-                return Sounds[name];
+                return MemorySounds[name];
             }
             catch (KeyNotFoundException)
             {
-                return new Sound(Core.Audio, name);
+                return new MemorySound(Core.Audio, name);
             }
 
-        }
+        }*/
     }
 }
