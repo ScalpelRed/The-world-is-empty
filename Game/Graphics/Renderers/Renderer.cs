@@ -62,5 +62,11 @@ namespace Game.Graphics.Renderers
             }
             else throw new Exception($"This renderer has no value \"{name}\"");
         }
+
+        public void AddValue<T>(string name, UniformType type, T value) where T : struct
+        {
+            AddValue(name, type);
+            SetValue(name, value);
+        }
     }
 }

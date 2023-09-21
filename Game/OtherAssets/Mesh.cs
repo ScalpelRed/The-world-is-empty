@@ -2,7 +2,7 @@
 using System.Linq;
 using Genbox.VelcroPhysics.Shared;
 using Game.Phys;
-using Game.Main;
+using Game.Util;
 
 namespace Game.OtherAssets
 {

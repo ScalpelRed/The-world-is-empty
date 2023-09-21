@@ -4,7 +4,7 @@ using System.Linq;
 using System.Numerics;
 using System.Threading.Tasks;
 
-namespace Game.Main
+namespace Game.Util
 {
     public static class Util
     {

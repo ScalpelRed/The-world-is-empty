@@ -9,6 +9,7 @@ namespace Game.Main
     public abstract class ObjectModule
     {
         public readonly WorldObject LinkedObject;
+        public bool StepFromObject = true;
 
         public GameController Game
         {

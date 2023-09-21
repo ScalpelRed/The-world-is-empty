@@ -20,9 +20,7 @@ namespace Game.Main
         public void Step()
         {
             foreach (ObjectModule module in Modules)
-            {
-                module.Step();
-            }
+                if (module.StepFromObject) module.Step();
         }
 
         internal bool AddModule(ObjectModule module)
